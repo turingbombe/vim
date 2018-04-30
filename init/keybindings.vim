@@ -179,7 +179,7 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>""
 nmap <leader>l :TagbarToggle<CR>
 
 " Cmd-Shift-F searches the whole project (like in TextMate, RubyMine, etc.)
-map <D-F> :Ag<Space>
+map <C-F> :Ag<Space>
 
 " YankRing show registers
 :nnoremap <silent> <F6> :YRShow<CR>

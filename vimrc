@@ -63,7 +63,6 @@ else
   Plugin 'tpope/vim-unimpaired'
   Plugin 'sjl/gundo.vim'
   Plugin 'godlygeek/tabular'
-  Plugin 'scrooloose/syntastic'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'ervandew/supertab'
@@ -73,7 +72,6 @@ else
   Plugin 'nertzy/edit-plus'
   Plugin 'brysgo/quickfixfix'
   Plugin 'Lokaltog/vim-easymotion'
-  Plugin 'regreplop.vim'
   Plugin 'Peeja/insert_mode_background_color'
   Plugin 'vim-scripts/L9'
   Plugin 'Peeja/vim-cdo'
@@ -87,6 +85,7 @@ else
   Plugin 'tpope/vim-projectionist'
   Plugin 'kien/rainbow_parentheses.vim'
   Plugin 'sbdchd/neoformat'
+  Plugin 'w0rp/ale'
 
   "
   " Window Management
