@@ -85,6 +85,7 @@ else
   Plugin 'tpope/vim-projectionist'
   Plugin 'kien/rainbow_parentheses.vim'
   Plugin 'sbdchd/neoformat'
+  Plugin 'flowtype/vim-flow'
   Plugin 'w0rp/ale'
 
   "
@@ -96,7 +97,7 @@ else
   " Searching
   "
   Plugin 'mileszs/ack.vim'
-  Plugin 'epmatsw/ag.vim'
+  Plugin 'rking/ag.vim'
   Plugin 'tpope/vim-abolish'
   Plugin 'henrik/vim-qargs'
   Plugin 'ctrlpvim/ctrlp.vim'
@@ -133,6 +134,7 @@ else
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'luan/vim-concourse'
+  Plugin 'tomlion/vim-solidity'
 
   "
   " Development Tool Integration
