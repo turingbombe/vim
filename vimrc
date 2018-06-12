@@ -85,7 +85,7 @@ else
   Plugin 'tpope/vim-projectionist'
   Plugin 'kien/rainbow_parentheses.vim'
   Plugin 'sbdchd/neoformat'
-  Plugin 'flowtype/vim-flow'
+  Plugin 'ryanoasis/vim-devicons'
   Plugin 'w0rp/ale'
 
   "

@@ -1,11 +1,12 @@
 scriptencoding utf-8
 
-set guifont=Menlo:h14
+set guifont=Menlo:h16
 set guioptions-=T               " Remove GUI toolbar
 set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
 set guicursor=a:blinkon0        " Turn off the blinking cursor
 set visualbell                  " Suppress audio/visual error bell
+set encoding=UTF-8              " Set encoding for NerdTree icons
 
 set notimeout                   " No command timeout
 set ttimeout                    " Add back a timeout for terminal vim
@@ -20,6 +21,7 @@ set autoindent
 set smarttab                    " Use shiftwidth to tab at line beginning
 set shiftwidth=2                " Width of autoindent
 set number                      " Line numbers
+set relativenumber              " Relative line numbers
 set nowrap                      " No wrapping
 set backspace=indent,eol,start " Let backspace work over anything.
 set wildignore+=tags               " Ignore tags when globbing.
