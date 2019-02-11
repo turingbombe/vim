@@ -135,6 +135,7 @@ else
   Plugin 'elixir-lang/vim-elixir'
   Plugin 'luan/vim-concourse'
   Plugin 'tomlion/vim-solidity'
+  Plugin 'udalov/kotlin-vim'
 
   "
   " Development Tool Integration
