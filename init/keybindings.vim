@@ -56,7 +56,7 @@ nnoremap <C-e>  3<C-e>
 nnoremap <C-y>  3<C-y>
 
 " Format JSON
-noremap <Leader>J :.!python -m json.tool<CR>
+noremap <leader>J :.!python -m json.tool<CR>
 
 " File tree browser
 map \           :NERDTreeToggle<CR>
