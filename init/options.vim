@@ -47,7 +47,6 @@ set history=1024                " History size
 set smartcase                   " Smart case-sensitivity when searching (overrides ignorecase)
 
 set autoread                    " No prompt for file changes outside Vim
-set balloonevalterm
 set swapfile                    " Keep swapfiles
 set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
