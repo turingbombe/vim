@@ -11,6 +11,7 @@ set encoding=UTF-8              " Set encoding for NerdTree icons
 set notimeout                   " No command timeout
 set ttimeout                    " Add back a timeout for terminal vim
 set ttimeoutlen=100             " Keep the timeout very short
+set ttyfast
 
 set showcmd                     " Show typed command prefixes while waiting for operator
 set mouse=a                     " Use mouse support in XTerm/iTerm.
@@ -22,6 +23,7 @@ set smarttab                    " Use shiftwidth to tab at line beginning
 set shiftwidth=2                " Width of autoindent
 set number                      " Line numbers
 set relativenumber              " Relative line numbers
+set lazyredraw
 set nowrap                      " No wrapping
 set backspace=indent,eol,start " Let backspace work over anything.
 set wildignore+=tags               " Ignore tags when globbing.
@@ -62,6 +64,6 @@ let g:sql_type_default="postgresql"
 
 " Turn off ri tooltips that don't work with Ruby 1.9 yet
 " http://code.google.com/p/macvim/issues/detail?id=342
-if has("gui_running")
-  set noballooneval
-endif
+" if has("gui_running")
+  " set noballooneval
+" endif
