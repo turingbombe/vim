@@ -32,7 +32,6 @@ else
   Plugin 'tpope/vim-vividchalk'
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'chriskempson/vim-tomorrow-theme'
-  Plugin 'candycode.vim'
   Plugin 'Colour-Sampler-Pack'
   Plugin 'joshdick/onedark.vim'
 
@@ -54,7 +53,6 @@ else
   Plugin 'tpope/vim-surround'
   Plugin 'tpope/vim-unimpaired'
   Plugin 'sjl/gundo.vim'
-  Plugin 'godlygeek/tabular'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'ervandew/supertab'
@@ -95,8 +93,6 @@ else
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'pangloss/vim-javascript'
   Plugin 'plasticboy/vim-markdown'
-  Plugin 'tpope/vim-cucumber'
-  Plugin 'quentindecock/vim-cucumber-align-pipes'
   Plugin 'fatih/vim-go'
   Plugin 'chrisbra/csv.vim'
   Plugin 'elzr/vim-json'
@@ -113,7 +109,6 @@ else
   "
   Plugin 'tpope/vim-fugitive'
   Plugin 'airblade/vim-gitgutter'
-  Plugin 'pivotal/tmux-config'
   Plugin 'tpope/vim-dispatch'
   Plugin 'carlobaldassi/ConqueTerm'
   Plugin 'sjl/vitality.vim'
