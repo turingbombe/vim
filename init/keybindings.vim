@@ -97,27 +97,18 @@ cmap <C-A> <C-B>
 map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
 map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
 
-" Run tests
-map <leader>t :wa<CR>:RunTestLine<CR>
-map <leader>T :wa<CR>:RunTest<CR>
-map <leader>tt :wa<CR>:RunTestAgain<CR>
-
-map <F12> :write<CR>:RunTest<CR>
-imap <F12> <ESC><F12>
-map <F11> :write<CR>:RunTestLine<CR>
-imap <F11> <ESC><F11>
-map <F10> :write<CR>:RunTestAgain<CR>
-imap <F10> <ESC><F10>
-map <F9> :write<CR>:RunTestPrevious<CR>
-imap <F9> <ESC><F9>
-
 " Disable middle mouse button, F1
 map <MiddleMouse>   <Nop>
 imap <MiddleMouse>  <Nop>
 map <F1>            <Nop>
 imap <F1>           <Nop>
 
-" Easy access to the shell
+" search file names (Leader-f)
+nnoremap <Leader>f :Files<CR>
+
+" search buffer names (Leader-b)
+nnoremap <Leader>b :Buffer<CR>
+" Easy acess to the shell
 map <Leader><Leader> :!
 
 " AckGrep current word
@@ -130,46 +121,6 @@ nmap du :diffupdate<CR>
 
 " Gundo.vim
 map <leader>u :GundoToggle<CR>
-
-" ctrlp
-" <leader>f is the default trigger (set in init/ctrlp.vim)
-nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
-
-" Additional mapping for buffer search
-nnoremap <silent> <leader>bb :CtrlPBuffer<cr>
-map <D-e> :CtrlPBuffer<CR>
-
-" Map most recently used
-nnoremap <silent> <C-p> :CtrlPMRU<cr>
-
-" Cmd-Shift-P to clear the cache
-nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
-
-" Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
-" Open CtrlP starting from a particular path, making it much
-" more likely to find the correct thing first. mnemonic 'jump to [something]'
-map <leader>jm :CtrlP app/models<CR>
-map <leader>jc :CtrlP app/controllers<CR>
-map <leader>jv :CtrlP app/views<CR>
-map <leader>jh :CtrlP app/helpers<CR>
-map <leader>jl :CtrlP lib<CR>
-map <leader>jp :CtrlP public<CR>
-map <leader>js :CtrlP spec<CR>
-map <leader>jf :CtrlP fast_spec<CR>
-map <leader>jd :CtrlP db<CR>
-map <leader>jC :CtrlP config<CR>
-map <leader>jV :CtrlP vendor<CR>
-map <leader>jF :CtrlP factories<CR>
-map <leader>jT :CtrlP test<CR>
-
-"Cmd-Shift-(M)ethod - jump to a method (tag in current file)
-"Ctrl-m is not good - it overrides behavior of Enter
-nnoremap <silent> <D-M> :CtrlPBufTag<CR>
-
-" Mappings inherited from FuzzyFinder
-map <leader><C-N> :CtrlPCurWD<CR>
-map <leader>n :CtrlPCurWD<CR>
-map <D-N> :CtrlPCurWD<CR>
 
 " Write all
 map <silent> <F19>WriteAll :silent! wall<CR>
@@ -192,6 +143,3 @@ nmap <leader>ld <Plug>LocalMakelet
 
 nmap <leader>rp :RainbowParenthesesToggle<CR>
 
-" Convert simple_bdd steps into methods
-nnoremap <leader>bdd :SimpleBDD<CR>
-vnoremap <leader>bdd :SimpleBDD<CR>

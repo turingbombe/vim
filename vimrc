@@ -30,14 +30,11 @@ else
   " Colorschemes
   "
   Plugin 'tpope/vim-vividchalk'
-  Plugin 'chriskempson/base16-vim'
-  Plugin 'molokai'
   Plugin 'altercation/vim-colors-solarized'
-  Plugin 'wgibbs/vim-irblack'
   Plugin 'chriskempson/vim-tomorrow-theme'
   Plugin 'candycode.vim'
   Plugin 'Colour-Sampler-Pack'
-  Plugin 'flazz/vim-colorschemes'
+  Plugin 'joshdick/onedark.vim'
 
   "
   " Ruby / Rails
@@ -45,7 +42,6 @@ else
   Plugin 'tpope/vim-rails'
   Plugin 'tpope/vim-endwise'
   Plugin 'ecomba/vim-ruby-refactoring'
-  Plugin 'nelstrom/vim-textobj-rubyblock'
   Plugin 'jgdavey/vim-blockle'
   Plugin 'tpope/vim-rbenv'
   Plugin 'tpope/vim-rake'
@@ -54,37 +50,22 @@ else
   " General Editing
   "
   Plugin 'tpope/vim-repeat'
-  Plugin 'tpope/vim-surround'
   Plugin 'scrooloose/nerdcommenter'
-  Plugin 'kana/vim-textobj-user'
-  Plugin 'Julian/vim-textobj-variable-segment'
-  Plugin 'kana/vim-textobj-line'
-  Plugin 'thinca/vim-textobj-between'
+  Plugin 'tpope/vim-surround'
   Plugin 'tpope/vim-unimpaired'
   Plugin 'sjl/gundo.vim'
   Plugin 'godlygeek/tabular'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
   Plugin 'ervandew/supertab'
-  Plugin 'nertzy/j-split'
   Plugin 'matt-royal/diffthese'
-  Plugin 'camelcasemotion'
-  Plugin 'nertzy/edit-plus'
   Plugin 'brysgo/quickfixfix'
   Plugin 'Lokaltog/vim-easymotion'
-  Plugin 'Peeja/insert_mode_background_color'
-  Plugin 'vim-scripts/L9'
-  Plugin 'Peeja/vim-cdo'
-  Plugin 'MarcWeber/vim-addon-mw-utils'
-  Plugin 'tomtom/tlib_vim'
-  Plugin 'garbas/vim-snipmate'
-  Plugin 'honza/vim-snippets'
   Plugin 'YankRing.vim'
   Plugin 'terryma/vim-multiple-cursors'
   Plugin 'editorconfig/editorconfig-vim'
   Plugin 'tpope/vim-projectionist'
   Plugin 'kien/rainbow_parentheses.vim'
-  Plugin 'sbdchd/neoformat'
   Plugin 'ryanoasis/vim-devicons'
   Plugin 'w0rp/ale'
 
@@ -99,8 +80,8 @@ else
   Plugin 'mileszs/ack.vim'
   Plugin 'rking/ag.vim'
   Plugin 'tpope/vim-abolish'
-  Plugin 'henrik/vim-qargs'
-  Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'junegunn/fzf'
+  Plugin 'junegunn/fzf.vim'
 
   "
   " Navigation
@@ -114,28 +95,18 @@ else
   Plugin 'vim-ruby/vim-ruby'
   Plugin 'pangloss/vim-javascript'
   Plugin 'plasticboy/vim-markdown'
-  Plugin 'slim-template/vim-slim'
-  Plugin 'nono/vim-handlebars'
-  Plugin 'kchmck/vim-coffee-script'
-  Plugin 'tpope/vim-haml'
   Plugin 'tpope/vim-cucumber'
   Plugin 'quentindecock/vim-cucumber-align-pipes'
-  Plugin 'juvenn/mustache.vim'
   Plugin 'fatih/vim-go'
-  Plugin 'rosstimson/scala-vim-support'
-  Plugin 'guns/vim-clojure-static'
   Plugin 'chrisbra/csv.vim'
   Plugin 'elzr/vim-json'
   Plugin 'briancollins/vim-jst'
-  Plugin 'digitaltoad/vim-jade'
-  Plugin 'mxw/vim-jsx'
-  Plugin 'lambdatoast/elm.vim'
-  Plugin 'leafgarland/typescript-vim'
   Plugin 'digitaltoad/vim-pug'
-  Plugin 'elixir-lang/vim-elixir'
-  Plugin 'luan/vim-concourse'
+  Plugin 'mxw/vim-jsx'
+  Plugin 'leafgarland/typescript-vim'
   Plugin 'tomlion/vim-solidity'
   Plugin 'udalov/kotlin-vim'
+  Plugin 'peitalin/vim-jsx-typescript'
 
   "
   " Development Tool Integration
@@ -146,8 +117,6 @@ else
   Plugin 'tpope/vim-dispatch'
   Plugin 'carlobaldassi/ConqueTerm'
   Plugin 'sjl/vitality.vim'
-  Plugin 'brysgo/test_server'
-  Plugin 'mdelillo/vim-simple-bdd'
 
   call vundle#end()
 
