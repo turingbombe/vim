@@ -110,6 +110,9 @@ nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>b :Buffer<CR>
 " Easy acess to the shell
 map <Leader><Leader> :!
+" Ale - Go To Definition
+noremap <leader>h :ALEGoToDefinition<CR>
+noremap <leader>hf :ALEFix<CR>
 
 " AckGrep current word
 map <leader>a :call AckGrep()<CR>
