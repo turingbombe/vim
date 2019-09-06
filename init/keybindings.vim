@@ -87,9 +87,10 @@ map <leader>g   :Gblame<CR>
 
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
-map <D-/>       <plug>NERDCommenterToggle
 imap <D-/>      <Esc><plug>NERDCommenterToggle i
 
+" Open a terminal with your bash profile loaded
+nnoremap <leader>z :terminal<CR>source ~/.bash_profile<CR>c<CR>
 " In command-line mode, <C-A> should go to the front of the line, as in bash.
 cmap <C-A> <C-B>
 

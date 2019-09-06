@@ -65,12 +65,7 @@ else
   Plugin 'tpope/vim-projectionist'
   Plugin 'kien/rainbow_parentheses.vim'
   Plugin 'ryanoasis/vim-devicons'
-  Plugin 'w0rp/ale'
-
-  "
-  " Window Management
-  "
-  Plugin 'ZoomWin'
+  Plugin 'dense-analysis/ale'
 
   "
   " Searching
