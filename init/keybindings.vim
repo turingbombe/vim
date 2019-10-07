@@ -84,6 +84,7 @@ map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
 " Git blame
 map <leader>g   :Gblame<CR>
+map <leader>gd  :Gdiff<CR>
 
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
@@ -111,9 +112,10 @@ nnoremap <Leader>f :Files<CR>
 nnoremap <Leader>b :Buffer<CR>
 " Easy acess to the shell
 map <Leader><Leader> :!
+
 " Ale - Go To Definition
-noremap <leader>h :ALEGoToDefinition<CR>
-noremap <leader>hf :ALEFix<CR>
+nnoremap <Leader>h :ALEGoToDefinition<CR>
+nnoremap <Leader>hf :ALEFix<CR>
 
 " AckGrep current word
 map <leader>a :call AckGrep()<CR>
@@ -140,7 +142,7 @@ nmap <leader>l :TagbarToggle<CR>
 map <C-F> :Ag<Space>
 
 " YankRing show registers
-:nnoremap <silent> <F6> :YRShow<CR>
+nnoremap <silent> <F6> :YRShow<CR>
 
 " Convert a word to to let(:word) { double(:word) }
 nmap <leader>ld <Plug>LocalMakelet

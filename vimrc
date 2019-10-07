@@ -66,6 +66,7 @@ else
   Plugin 'kien/rainbow_parentheses.vim'
   Plugin 'ryanoasis/vim-devicons'
   Plugin 'dense-analysis/ale'
+  Plugin 'prettier/vim-prettier'
 
   "
   " Searching

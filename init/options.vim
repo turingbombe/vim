@@ -31,6 +31,9 @@ set wildignore+=tmp/**             " ...Also tmp files.
 set wildignore+=public/uploads/**  " ...Also uploads.
 set wildignore+=public/images/**   " ...Also images.
 set wildignore+=vendor/**          " ...Also vendor.
+set wildignore+=**/node_modules/*  " ...Also node modules.
+set wildignore+=**/dist/**         " ...Also builds
+set wildignore+=yarn.lock          " ...Also yarn lock files
 
 set list                        " Show whitespace
 set listchars=trail:·
