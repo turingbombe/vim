@@ -31,9 +31,8 @@ else
   "
   Plugin 'tpope/vim-vividchalk'
   Plugin 'altercation/vim-colors-solarized'
-  Plugin 'chriskempson/vim-tomorrow-theme'
-  Plugin 'Colour-Sampler-Pack'
   Plugin 'joshdick/onedark.vim'
+  Plugin 'arzg/vim-substrata'
 
   "
   " Ruby / Rails
