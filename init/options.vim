@@ -6,7 +6,7 @@ set guioptions-=e               " Use text tab bar, not GUI
 set guioptions-=rL              " Remove scrollbars
 set guicursor=a:blinkon0        " Turn off the blinking cursor
 set visualbell                  " Suppress audio/visual error bell
-set encoding=UTF-8              " Set encoding for NerdTree icons
+set encoding=utf8               " Set encoding for NerdTree icons
 
 set notimeout                   " No command timeout
 set ttimeout                    " Add back a timeout for terminal vim
