@@ -33,6 +33,7 @@ else
   Plugin 'altercation/vim-colors-solarized'
   Plugin 'joshdick/onedark.vim'
   Plugin 'arzg/vim-substrata'
+  Plugin 'cocopon/iceberg.vim'
 
   "
   " Ruby / Rails
