@@ -38,3 +38,6 @@ autocmd FileType ruby imap  <Space>=><Space>
 
 " Open all folds in Markdown.
 autocmd FileType mkd normal zR
+
+" Add typescript filetype settings
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript

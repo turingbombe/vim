@@ -94,11 +94,10 @@ else
   Plugin 'elzr/vim-json'
   Plugin 'briancollins/vim-jst'
   Plugin 'digitaltoad/vim-pug'
-  Plugin 'mxw/vim-jsx'
-  Plugin 'leafgarland/typescript-vim'
   Plugin 'tomlion/vim-solidity'
   Plugin 'udalov/kotlin-vim'
-  Plugin 'peitalin/vim-jsx-typescript'
+  Plugin 'maxmellon/vim-jsx-pretty'
+  Plugin 'HerringtonDarkholme/yats'
 
   "
   " Development Tool Integration
