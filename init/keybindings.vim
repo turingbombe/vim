@@ -65,8 +65,8 @@ map \           :NERDTreeToggle<CR>
 map \|          :NERDTreeFind<CR>
 
 " Previous/next quickfix file listings (e.g. search results)
-map <M-D-Down>  :cn<CR>
-map <M-D-Up>    :cp<CR>
+map <leader>n  :cn<CR>
+map <leader>N    :cp<CR>
 
 " Open and close the quickfix window
 map <leader>qo  :copen<CR>
