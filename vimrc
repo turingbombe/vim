@@ -36,22 +36,13 @@ else
   Plugin 'tpope/vim-vividchalk'
 
   "
-  " Ruby / Rails
-  "
-  Plugin 'ecomba/vim-ruby-refactoring'
-  Plugin 'jgdavey/vim-blockle'
-  Plugin 'tpope/vim-endwise'
-  Plugin 'tpope/vim-rails'
-  Plugin 'tpope/vim-rake'
-  Plugin 'tpope/vim-rbenv'
-
-  "
   " General Editing
   "
   Plugin 'Lokaltog/vim-easymotion'
   Plugin 'YankRing.vim'
   Plugin 'brysgo/quickfixfix'
   Plugin 'dense-analysis/ale'
+  Plugin 'mtth/scratch.vim'
   Plugin 'editorconfig/editorconfig-vim'
   Plugin 'ervandew/supertab'
   Plugin 'kien/rainbow_parentheses.vim'
@@ -65,6 +56,7 @@ else
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'tpope/vim-unimpaired'
+  Plugin 'tpope/vim-obsession'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
 
@@ -97,7 +89,6 @@ else
   Plugin 'plasticboy/vim-markdown'
   Plugin 'tomlion/vim-solidity'
   Plugin 'udalov/kotlin-vim'
-  Plugin 'vim-ruby/vim-ruby'
 
   "
   " Development Tool Integration
