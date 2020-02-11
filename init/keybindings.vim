@@ -149,3 +149,4 @@ nmap <leader>ld <Plug>LocalMakelet
 
 nmap <leader>rp :RainbowParenthesesToggle<CR>
 
+nmap <localleader>s :Scratch<CR>

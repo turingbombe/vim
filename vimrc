@@ -52,6 +52,7 @@ else
   Plugin 'YankRing.vim'
   Plugin 'brysgo/quickfixfix'
   Plugin 'dense-analysis/ale'
+  Plugin 'mtth/scratch.vim'
   Plugin 'editorconfig/editorconfig-vim'
   Plugin 'ervandew/supertab'
   Plugin 'kien/rainbow_parentheses.vim'
@@ -65,6 +66,7 @@ else
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'tpope/vim-unimpaired'
+  Plugin 'tpope/vim-obsession'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
 
