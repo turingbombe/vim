@@ -40,4 +40,5 @@ autocmd FileType ruby imap  <Space>=><Space>
 autocmd FileType mkd normal zR
 
 " Add typescript filetype settings
-autocmd BufNewFile,BufRead *.tsx set filetype=typescript
+autocmd BufNewFile,BufRead *.ts set filetype=typescript
+autocmd BufNewFile,BufRead *.tsx set filetype=typescriptreact

@@ -44,7 +44,6 @@ else
   Plugin 'dense-analysis/ale'
   Plugin 'mtth/scratch.vim'
   Plugin 'editorconfig/editorconfig-vim'
-  Plugin 'ervandew/supertab'
   Plugin 'kien/rainbow_parentheses.vim'
   Plugin 'matt-royal/diffthese'
   Plugin 'prettier/vim-prettier'
@@ -84,11 +83,11 @@ else
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elzr/vim-json'
   Plugin 'fatih/vim-go'
-  Plugin 'maxmellon/vim-jsx-pretty'
-  Plugin 'pangloss/vim-javascript'
+  Plugin 'othree/yajs.vim'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'tomlion/vim-solidity'
   Plugin 'udalov/kotlin-vim'
+  Plugin 'maxmellon/vim-jsx-pretty'
 
   "
   " Development Tool Integration

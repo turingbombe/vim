@@ -34,7 +34,6 @@ set wildignore+=vendor/**          " ...Also vendor.
 set wildignore+=**/node_modules/*  " ...Also node modules.
 set wildignore+=**/dist/**         " ...Also builds
 set wildignore+=yarn.lock          " ...Also yarn lock files
-
 set list                        " Show whitespace
 set listchars=trail:·
 
