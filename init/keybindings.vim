@@ -84,7 +84,7 @@ map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
 " Git blame
 map <leader>g   :Gblame<CR>
-map <leader>gd  :Gdiff<CR>
+map <leader>gd  :Gdiffsplit!<CR>
 
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
