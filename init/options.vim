@@ -36,6 +36,7 @@ set wildignore+=**/dist/**         " ...Also builds
 set wildignore+=yarn.lock          " ...Also yarn lock files
 set list                        " Show whitespace
 set listchars=trail:·
+set completeopt=longest,menuone " Set omnicomplete to work more like IDE
 
 set showmatch                   " Show matching brackets
 set hidden                      " Allow hidden, unsaved buffers
