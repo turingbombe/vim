@@ -33,6 +33,7 @@ else
   Plugin 'arzg/vim-substrata'
   Plugin 'cocopon/iceberg.vim'
   Plugin 'joshdick/onedark.vim'
+  Plugin 'jsit/toast.vim'
   Plugin 'tpope/vim-vividchalk'
 
   "
@@ -42,20 +43,20 @@ else
   Plugin 'YankRing.vim'
   Plugin 'brysgo/quickfixfix'
   Plugin 'dense-analysis/ale'
-  Plugin 'mtth/scratch.vim'
   Plugin 'editorconfig/editorconfig-vim'
   Plugin 'kien/rainbow_parentheses.vim'
   Plugin 'matt-royal/diffthese'
+  Plugin 'mtth/scratch.vim'
   Plugin 'prettier/vim-prettier'
   Plugin 'ryanoasis/vim-devicons'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'sjl/gundo.vim'
   Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'tpope/vim-obsession'
   Plugin 'tpope/vim-projectionist'
   Plugin 'tpope/vim-repeat'
   Plugin 'tpope/vim-surround'
   Plugin 'tpope/vim-unimpaired'
-  Plugin 'tpope/vim-obsession'
   Plugin 'vim-airline/vim-airline'
   Plugin 'vim-airline/vim-airline-themes'
 
@@ -71,8 +72,8 @@ else
   "
   " Navigation
   "
-  Plugin 'scrooloose/nerdtree'
   Plugin 'majutsushi/tagbar'
+  Plugin 'scrooloose/nerdtree'
 
   "
   " Languages
@@ -83,11 +84,11 @@ else
   Plugin 'digitaltoad/vim-pug'
   Plugin 'elzr/vim-json'
   Plugin 'fatih/vim-go'
+  Plugin 'maxmellon/vim-jsx-pretty'
   Plugin 'othree/yajs.vim'
   Plugin 'plasticboy/vim-markdown'
   Plugin 'tomlion/vim-solidity'
   Plugin 'udalov/kotlin-vim'
-  Plugin 'maxmellon/vim-jsx-pretty'
 
   "
   " Development Tool Integration
@@ -96,6 +97,7 @@ else
   Plugin 'sjl/vitality.vim'
   Plugin 'tpope/vim-dispatch'
   Plugin 'tpope/vim-fugitive'
+  Plugin 'vimwiki/vimwiki'
 
   call vundle#end()
 
