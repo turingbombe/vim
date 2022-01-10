@@ -34,7 +34,10 @@ else
   Plugin 'cocopon/iceberg.vim'
   Plugin 'joshdick/onedark.vim'
   Plugin 'jsit/toast.vim'
-  Plugin 'tpope/vim-vividchalk'
+  Plugin 'arcticicestudio/nord-vim'
+  Plugin 'NLKNguyen/papercolor-theme'
+  Plugin 'sainnhe/gruvbox-material'
+  Plugin 'pineapplegiant/spaceduck'
 
   "
   " General Editing
@@ -89,6 +92,7 @@ else
   Plugin 'plasticboy/vim-markdown'
   Plugin 'tomlion/vim-solidity'
   Plugin 'udalov/kotlin-vim'
+  Plugin 'styled-components/vim-styled-components'
 
   "
   " Development Tool Integration

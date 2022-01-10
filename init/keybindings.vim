@@ -83,7 +83,7 @@ vmap <s-tab> <gv
 map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
 " Git blame
-map <leader>g   :Gblame<CR>
+map <leader>g   :Git blame<CR>
 map <leader>gd  :Gdiffsplit!<CR>
 
 " Comment/uncomment lines
@@ -116,6 +116,7 @@ map <Leader><Leader> :!
 " Ale - Go To Definition
 nnoremap <Leader>h :ALEGoToDefinition<CR>
 nnoremap <Leader>hf :ALEFix<CR>
+nnoremap <Leader>hr :ALEFindReferences<CR>
 
 " AckGrep current word
 map <leader>a :call AckGrep()<CR>
