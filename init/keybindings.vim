@@ -84,7 +84,7 @@ map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
 " Git blame
 map <leader>g   :Git blame<CR>
-map <leader>gd  :Gdiffsplit!<CR>
+map <leader>gd  :Gvdiffsplit!<CR>
 
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
@@ -116,7 +116,7 @@ map <Leader><Leader> :!
 " Ale - Go To Definition
 nnoremap <Leader>h :ALEGoToDefinition<CR>
 nnoremap <Leader>hf :ALEFix<CR>
-nnoremap <Leader>hr :ALEFindReferences<CR>
+nnoremap <Leader>hr :ALEFindReferences -relative<CR>
 
 " AckGrep current word
 map <leader>a :call AckGrep()<CR>
