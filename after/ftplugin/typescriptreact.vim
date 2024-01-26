@@ -1,3 +1,3 @@
  let b:ale_linters = ['tsserver', 'eslint']
- let b:ale_fixers = ['eslint', 'prettier']
+ let b:ale_fixers = ['prettier', 'eslint']
  set re=0
