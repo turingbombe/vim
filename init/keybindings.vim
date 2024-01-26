@@ -1,4 +1,4 @@
-" Keybindings
+" Keybinding
 " -----------
 
 let mapleader = ","
@@ -83,7 +83,7 @@ vmap <s-tab> <gv
 map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
 " Git blame
-map <leader>g   :Gblame<CR>
+map <leader>g   :Git blame<CR>
 map <leader>gd  :Gdiffsplit!<CR>
 
 " Comment/uncomment lines
@@ -91,7 +91,7 @@ map <leader>/   <plug>NERDCommenterToggle
 imap <D-/>      <Esc><plug>NERDCommenterToggle i
 
 " Open a terminal with your bash profile loaded
-nnoremap <leader>z :terminal<CR>source ~/.bash_profile<CR>c<CR>
+nnoremap <leader>z :terminal<CR>source ~/.zshrc<CR>c<CR>
 " In command-line mode, <C-A> should go to the front of the line, as in bash.
 cmap <C-A> <C-B>
 
@@ -116,6 +116,13 @@ map <Leader><Leader> :!
 " Ale - Go To Definition
 nnoremap <Leader>h :ALEGoToDefinition<CR>
 nnoremap <Leader>hf :ALEFix<CR>
+nnoremap <Leader>hh :ALEDetail<CR>
+nnoremap <Leader>hr :ALEFindReferences<CR>
+
+" Console log shortcut
+imap <Leader>cp oconsole.log('p$a', p$a)
+nmap <leader>cp yiwi<Leader>cp
+vmap <leader>cp yi<Leader>cp
 
 " AckGrep current word
 map <leader>a :call AckGrep()<CR>
@@ -140,9 +147,6 @@ nmap <leader>l :TagbarToggle<CR>
 
 " Cmd-Shift-F searches the whole project (like in TextMate, RubyMine, etc.)
 map <C-F> :Ag<Space>
-
-" YankRing show registers
-nnoremap <silent> <F6> :YRShow<CR>
 
 " Convert a word to to let(:word) { double(:word) }
 nmap <leader>ld <Plug>LocalMakelet

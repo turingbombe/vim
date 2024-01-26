@@ -16,98 +16,91 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-let need_to_install_plugins=0
-if empty(system("grep lazy_load ~/.vim/bundle/Vundle.vim/autoload/vundle.vim"))
-  echoerr "Vundle plugins are not installed. Please run ~/.vim/bin/install"
-else
-  set rtp+=~/.vim/bundle/Vundle.vim
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
 
-  call vundle#begin()
-
-  Plugin 'VundleVim/Vundle.vim'
+  call plug#begin()
 
   "
   " Colorschemes
   "
-  Plugin 'altercation/vim-colors-solarized'
-  Plugin 'arzg/vim-substrata'
-  Plugin 'cocopon/iceberg.vim'
-  Plugin 'joshdick/onedark.vim'
-  Plugin 'jsit/toast.vim'
-  Plugin 'tpope/vim-vividchalk'
+  Plug 'altercation/vim-colors-solarized'
+  Plug 'arzg/vim-substrata'
+  Plug 'cocopon/iceberg.vim'
+  Plug 'joshdick/onedark.vim'
+  Plug 'jsit/toast.vim'
+  Plug 'tpope/vim-vividchalk'
+  Plug 'gruvbox-community/gruvbox'
 
   "
   " General Editing
   "
-  Plugin 'Lokaltog/vim-easymotion'
-  Plugin 'YankRing.vim'
-  Plugin 'brysgo/quickfixfix'
-  Plugin 'dense-analysis/ale'
-  Plugin 'editorconfig/editorconfig-vim'
-  Plugin 'kien/rainbow_parentheses.vim'
-  Plugin 'matt-royal/diffthese'
-  Plugin 'mtth/scratch.vim'
-  Plugin 'prettier/vim-prettier'
-  Plugin 'ryanoasis/vim-devicons'
-  Plugin 'scrooloose/nerdcommenter'
-  Plugin 'sjl/gundo.vim'
-  Plugin 'terryma/vim-multiple-cursors'
-  Plugin 'tpope/vim-obsession'
-  Plugin 'tpope/vim-projectionist'
-  Plugin 'tpope/vim-repeat'
-  Plugin 'tpope/vim-surround'
-  Plugin 'tpope/vim-unimpaired'
-  Plugin 'vim-airline/vim-airline'
-  Plugin 'vim-airline/vim-airline-themes'
+  Plug 'Lokaltog/vim-easymotion'
+  Plug 'brysgo/quickfixfix'
+  Plug 'dense-analysis/ale'
+  Plug 'editorconfig/editorconfig-vim'
+  Plug 'kien/rainbow_parentheses.vim'
+  Plug 'matt-royal/diffthese'
+  Plug 'mtth/scratch.vim'
+  Plug 'prettier/vim-prettier'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'scrooloose/nerdcommenter'
+  Plug 'sjl/gundo.vim'
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'tpope/vim-obsession'
+  Plug 'tpope/vim-projectionist'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-unimpaired'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'ap/vim-css-color'
 
   "
   " Searching
   "
-  Plugin 'junegunn/fzf'
-  Plugin 'junegunn/fzf.vim'
-  Plugin 'mileszs/ack.vim'
-  Plugin 'rking/ag.vim'
-  Plugin 'tpope/vim-abolish'
+  Plug 'junegunn/fzf'
+  Plug 'junegunn/fzf.vim'
+  Plug 'mileszs/ack.vim'
+  Plug 'rking/ag.vim'
+  Plug 'tpope/vim-abolish'
 
   "
   " Navigation
   "
-  Plugin 'majutsushi/tagbar'
-  Plugin 'scrooloose/nerdtree'
+  Plug 'majutsushi/tagbar'
+  Plug 'scrooloose/nerdtree'
 
   "
   " Languages
   "
-  Plugin 'HerringtonDarkholme/yats'
-  Plugin 'briancollins/vim-jst'
-  Plugin 'chrisbra/csv.vim'
-  Plugin 'digitaltoad/vim-pug'
-  Plugin 'elzr/vim-json'
-  Plugin 'fatih/vim-go'
-  Plugin 'maxmellon/vim-jsx-pretty'
-  Plugin 'othree/yajs.vim'
-  Plugin 'plasticboy/vim-markdown'
-  Plugin 'tomlion/vim-solidity'
-  Plugin 'udalov/kotlin-vim'
-
+  Plug 'HerringtonDarkholme/yats'
+  Plug 'briancollins/vim-jst'
+  Plug 'chrisbra/csv.vim'
+  Plug 'digitaltoad/vim-pug'
+  Plug 'elzr/vim-json'
+  Plug 'fatih/vim-go'
+  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'othree/yajs.vim'
+  Plug 'plasticboy/vim-markdown'
+  Plug 'tomlion/vim-solidity'
+  Plug 'udalov/kotlin-vim'
   "
   " Development Tool Integration
   "
-  Plugin 'airblade/vim-gitgutter'
-  Plugin 'sjl/vitality.vim'
-  Plugin 'tpope/vim-dispatch'
-  Plugin 'tpope/vim-fugitive'
-  Plugin 'vimwiki/vimwiki'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'sjl/vitality.vim'
+  Plug 'tpope/vim-dispatch'
+  Plug 'tpope/vim-fugitive'
+  Plug 'vimwiki/vimwiki'
 
-  call vundle#end()
-
-  filetype plugin indent on
-
-  syntax on
+  call plug#end()
 
   runtime! init/**.vim
 
   if filereadable($HOME . "/.vimrc.local")
     source ~/.vimrc.local
   endif
-endif

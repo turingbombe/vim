@@ -2,7 +2,7 @@
 cd ~/.vim
 [[ -h "$HOME/.vimrc" ]] || ln -s ~/.vim/vimrc ~/.vimrc
 
-if !(grep --quiet --no-messages lazy_load ~/.vim/bundle/Vundle.vim/autoload/vundle.vim); then
+if !(grep --quiet --no-messages lazy_load ~/.vim/bundle/vundle.git/autoload/vundle.vim); then
   echo "Installing Vundle..."
   echo ""
   mkdir -p ~/.vim/bundle
