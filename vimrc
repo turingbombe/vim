@@ -32,6 +32,7 @@ endif
   Plug 'cocopon/iceberg.vim'
   Plug 'joshdick/onedark.vim'
   Plug 'jsit/toast.vim'
+  Plug 'junegunn/seoul256.vim'
   Plug 'tpope/vim-vividchalk'
   Plug 'gruvbox-community/gruvbox'
 
@@ -48,7 +49,6 @@ endif
   Plug 'prettier/vim-prettier'
   Plug 'ryanoasis/vim-devicons'
   Plug 'scrooloose/nerdcommenter'
-  Plug 'sjl/gundo.vim'
   Plug 'terryma/vim-multiple-cursors'
   Plug 'tpope/vim-obsession'
   Plug 'tpope/vim-projectionist'
@@ -58,6 +58,7 @@ endif
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
   Plug 'ap/vim-css-color'
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 
   "
   " Searching
@@ -88,6 +89,7 @@ endif
   Plug 'plasticboy/vim-markdown'
   Plug 'tomlion/vim-solidity'
   Plug 'udalov/kotlin-vim'
+  Plug 'mustache/vim-mustache-handlebars'
   "
   " Development Tool Integration
   "

@@ -132,9 +132,6 @@ vmap <leader>a :call AckVisual()<CR>
 " Recalculate diff when it gets messed up.
 nmap du :diffupdate<CR>
 
-" Gundo.vim
-map <leader>u :GundoToggle<CR>
-
 " Write all
 map <silent> <F19>WriteAll :silent! wall<CR>
 
@@ -149,8 +146,10 @@ nmap <leader>l :TagbarToggle<CR>
 map <C-F> :Ag<Space>
 
 " Convert a word to to let(:word) { double(:word) }
-nmap <leader>ld <Plug>LocalMakelet
 
 nmap <leader>rp :RainbowParenthesesToggle<CR>
 
 nmap <localleader>s :Scratch<CR>
+
+" copy pwd to clipboard
+nnoremap <Leader>pwd :let @+ = expand("%")<CR>
